@@ -1,7 +1,6 @@
 package logger
 
 import (
-	"fmt"
 	"os"
 
 	"go.uber.org/zap"
@@ -52,8 +51,6 @@ func (l *Logger) GetLogger() *zap.Logger {
 	// defer logger.Sync()
 	// defer logFile.Close()
 	logger.Sync()
-	// logFile.Close()
-	fmt.Println("================================================================")
 	return logger
 }
 
